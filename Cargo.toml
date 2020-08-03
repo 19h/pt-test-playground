@@ -1,0 +1,16 @@
+[package]
+name = "p0"
+version = "0.1.0"
+authors = ["Kenan Sulayman <kenan@sig.dev>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = "0.13.6"
+#pt = "0.2.1"
+pt = { path = "../polygon-rs" }
+#pt = { path = "../swagger/dump" }
+tokio = { version = "0.2.21", features = ["full"] }
+hyper-tls = "0.4.1"
+colored = "1.9.3"
